@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>js framework</h3>
+    <ul id="myul">
+        <li>Jquery</li>
+        <li id="myang">Angular JS</li>
+        <li>react js</li>
+        <li id="myd3">D3 js</li>
+    </ul>
+    <script>
+        let parentNode  = document.getElementById("myul")
+        let newNode = document.createElement("li")
+        newNode.textContent = "backbond js"
+        let refnode =document.getElementById("myang")
+        parentNode.insertBefore(newNode, refnode)
+        console.log(parentNode)
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Exacaption handaling</h1>
+    <script>
+        function getRectArea(w,h){
+            if(isNaN(w) || isNaN(h)){
+                // throw new Error("parameter is not a number") 
+                throw "parameter is not a number";
+            }
+        }
+        try { 
+            // add()
+            getRectArea(10,'A')
+            document.write("skip"+ "<br>")
+            console.log("skip")
+         }
+         catch(e){
+            document.write("message: " + e.message  + "<br>")
+            document.write("name: " + e.name + "<br>")
+            document.write("stack: " + e.stack  + "<br>")
+            console.log(e.message)
+            console.log(e.name)
+            console.log(e.stack)
+            console.log(e)
+         }
+         finally{
+             document.write("ya finally tho chalaga he chalaga"+ "<br>")
+             console.log("ya finally tho chalaga he chalaga")
+         }
+    </script>
+</body>
+
+</html>

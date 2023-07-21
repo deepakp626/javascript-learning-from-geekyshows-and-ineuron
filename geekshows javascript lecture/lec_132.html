@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //// Example 2
+        let arr= [
+            { price: "100" , product:"mobile"},
+            { price: "200" , product:"laptop"},
+            { price: "300" , product:"mic"},
+            { price: "400" , product:"pc"}
+        ]
+       let newArr=   arr.map((value) =>{
+            return value.price + "--" + value.product
+        })
+        console.log(newArr)
+
+
+
+        ////// Example 1
+        // let arr = [10,20,30,40,50]
+        // let newArr =  arr.map(function(value){
+        //     value++; 
+        //     return value;
+        // },0)
+        // console.log(arr);
+        // console.log(newArr);
+    </script>
+</body>
+</html>

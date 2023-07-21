@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>remove</title>
+</head>
+<body>
+    <ol id="elem">
+        <li>html</li>
+        <li>css</li>
+    </ol>
+    <script>
+        function clear(elem) {
+            let delete_elem  = document.getElementById("elem")
+            console.log(delete_elem)
+            delete_elem.remove();
+            console.log("deleted succesfully")
+        }
+        clear(elem);
+    </script>
+</body>
+</html>

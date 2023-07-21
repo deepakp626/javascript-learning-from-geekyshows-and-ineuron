@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p id="myid1"> this is a paragraph  <!-- this is commit  --> </p>
+
+    <script>
+        // Documentation
+        // document.write("---- Document ----" + "<br/>")
+        // document.write(document.nodeName + "<br/>")
+        // document.write(document.nodeValue + "<br/>")
+        // document.write(document.nodeType + "<br/>")
+        // console.log(document.nodeName)
+        // console.log(document.nodeValue)
+        // console.log(document.nodeType)
+
+
+        // Element 
+        // document.write( "<br/>" + "<br/>"+"---- Element ----" + "<br/>")
+        // let ele = document.getElementById("myid1")
+        // document.write(ele.nodeName + "<br/>")
+        // document.write(ele.nodeValue + "<br/>")
+        // document.write(ele.nodeType + "<br/>")
+        // console.log(ele.nodeName)
+        // console.log(ele.nodeValue)
+        // console.log(ele.nodeType)
+
+        // Text 
+        // document.write( "<br/>" + "<br/>"+"---- Text ----" + "<br/>")
+        // let txt = document.getElementById("myid1")
+        // document.write(txt.firstChild.nodeName + "<br/>")
+        // document.write(txt.firstChild.nodeValue + "<br/>")
+        // document.write(txt.firstChild.nodeType + "<br/>")
+        // console.log(txt.firstChild.nodeName)
+        // console.log(txt.firstChild.nodeValue)
+        // console.log(txt.firstChild.nodeType)
+
+
+         // commit
+        document.write( "<br/>" + "<br/>"+"---- commit ----" + "<br/>")
+        let txt = document.getElementById("myid1")
+        document.write(txt.firstChild.nextSibling.nodeName + "<br/>")
+        document.write(txt.firstChild.nextSibling.nodeValue + "<br/>")
+        document.write(txt.firstChild.nextSibling.nodeType + "<br/>")
+        console.log(txt.firstChild.nextSibling.nodeName)
+        console.log(txt.firstChild.nextSibling.nodeValue)
+        console.log(txt.firstChild.nextSibling.nodeType)
+
+    </script>
+</body>
+
+</html>

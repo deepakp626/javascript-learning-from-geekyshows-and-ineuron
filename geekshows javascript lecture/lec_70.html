@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .myclass1{
+            background-color:blue;
+        }
+        .myclass2{
+            background-color:red;
+        }
+    </style>
+</head>
+<body>
+    <body>
+        <p id="myp" class="myclass1 myclass2" style="color:darkgray; color:black; font-size: 30px;">paragrapher</p>
+        <script>
+          let p = document.getElementById("myp");
+         let cs = p.style
+         cs.cssText = "    font-size: 20px; "
+        console.log(cs.length)
+        console.log(cs[0])
+        console.log(cs.item(0))
+        console.log(cs.getPropertyValue("color"))
+        console.log(cs.removeProperty("color"))
+        console.log(cs.setProperty("font-size","90px",'important'))
+        console.log(cs.getPropertyPriority("color"))
+        console.log(p)
+        </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+          let course = {
+            courseName: "js",
+            duration: "6month",
+            tutor: "deepak",
+            student:{
+                 stu1:"vaibhav",
+                 stu2:"mona"
+            }
+        }; 
+        let {courseName,duration,tutor,student:{stu1,stu2}} = course;
+        console.log(courseName)
+        console.log(duration)
+        console.log(tutor)
+        console.log(stu1)
+        console.log(stu2)
+
+
+
+
+
+
+        // let course = {
+        //     courseName: "js",
+        //     duration: "6month",
+        //     tutor: "deep"
+        // }; 
+        // function show(z){
+        //     return z 
+        // }
+        // let {courseName,duration,tutor} =   show(course)
+        // console.log(courseName)
+        // console.log(duration)
+        // console.log(tutor)
+
+
+
+
+    //             let course = {
+    //         courseName: "js",
+    //         duration: "6month",
+    //         tutor: "deep"
+    //     }; 
+    // function show({courseName, duration, tutor}){
+    //     console.log(courseName,duration,tutor);
+    // }
+    // show(course);
+
+
+
+        // let {a,b} = {a:10 , b:20}
+        // console.log(a,b)
+        
+
+        // let {a,b=20} = {a:10 }
+        // console.log(a,b)
+
+        // let {a=40,b=20} = {a:90 }
+        // console.log(a,b)
+
+        // let {a:y=40,b:z=20} = {a:90 }
+        // console.log(y,z)
+
+        // let {a:y=40,z=20} = {a:90 }
+        // console.log(y,z)
+
+    //     let course = {
+    //         courseName: "js",
+    //         duration: "6month",
+    //         tutor: "deep"
+    //     }; 
+    // let {courseName,duration,tutor} = course;
+    // console.log(courseName)
+    // console.log(duration)
+    // console.log(tutor)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="myform" id="myformid">
+        username: <input type="text" name="u_field" id="username_id"><small id="u_small"></small><br><br>
+        <!-- Password: <input type="password" name="m_password_field"><br><br> -->
+        <input type="submit" name="m_sbtn" value="Submit"><br><br>
+      </form>
+      <script>
+          function validatedata(){
+             let   ptrn = /^([^0-9\W]*)$/
+             if(ptrn.test(document.myform.u_field.value)){
+                // document.myform.u_field.style.backgroundColor= "green"
+                document.getElementById("u_small").textContent = "user is valid"
+                document.getElementById("u_small").style.color = "green"
+            }else{
+                // document.myform.u_field.style.backgroundColor= "red"
+                document.getElementById("u_small").textContent = "user is Invalid"
+                document.getElementById("u_small").style.color = "red"
+             }
+          }  
+          document.myform.u_field.addEventListener("keyup",validatedata)
+      </script>
+</body>
+</html>

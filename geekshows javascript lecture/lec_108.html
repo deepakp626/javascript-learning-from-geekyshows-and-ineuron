@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="myp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptatem blanditiis doloremque ipsa totam reiciendis modi minus consequatur alias omnis vero ipsum sint nihil maxime harum, reprehenderit inventore deserunt qui?
+    </p>
+    <button id="btn">clear time</button>
+    <script>
+        let timeoutid = setTimeout(() =>{
+            document.getElementById("myp").style = "color:red";
+        },2000)
+
+        function clearTime(){
+            clearTimeout(timeoutid)
+        }
+        document.getElementById("btn").addEventListener("click", clearTime)
+    </script>
+</body>
+</html>

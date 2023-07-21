@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>create list</h1>
+    <ul id="list">
+
+    </ul>
+    <script>
+        let newArray = []
+        for(let i =0 ; i<5; i++){
+               newArray.push(prompt("Enter Name"))
+        }
+        for (const name of newArray) {
+            let newList = document.createElement("li")
+            newList.innerText = name
+            console.log(newList)
+            list.append(newList)
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myid">
+        <h1>we are js</h1>
+        <h1>i am h1</h1>
+    </div>
+    <script>
+        let h2 = document.createElement('h2');
+        let h2Text  = document.createTextNode('text by js')
+        let h2Commit = document.createComment('commit by js')
+        h2.appendChild(h2Text);
+        console.log(h2);
+        h2.appendChild(h2Commit);
+        let target = document.getElementById('myid')
+        target.appendChild(h2);
+        console.log(target);
+
+    </script>
+</body>
+</html>

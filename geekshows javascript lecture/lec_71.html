@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .myclass1{
+            font-style: italic;
+            font-size: 70px;
+        }
+    </style>
+</head>
+<body>
+        <p id="myp" class="myclass1" style="color:red;">paragrpah</p>
+        <script>
+            let p = document.getElementById("myp");
+            let allCSSprop = window.getComputedStyle(p)
+            console.log(allCSSprop.fontStyle)
+            console.log(allCSSprop)
+        </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #one {
+            width: 100px;
+            height: 100px; 
+            background-color: red;
+        }
+
+        #two {
+            width: 60px;
+            height: 60px;
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>mouse event</h1>
+    <div id="one">
+        <div id="two">
+
+        </div>
+    </div>
+    <script>
+        function div1(e) {
+            console.log(e.type);
+        }
+        let divone = document.getElementById("one");
+        let divtwo = document.getElementById("two");
+        divtwo.addEventListener("mousedown",div1);
+        divtwo.addEventListener("mouseup",div1);
+        divtwo.addEventListener("click",div1);
+        divtwo.addEventListener("dbclick",div1);
+        // divtwo.addEventListener("mouseenter",div1);
+        // divtwo.addEventListener("mouseleave",div1);
+        // divtwo.addEventListener("mouseover",div1);
+        // divtwo.addEventListener("mouseout",div1);
+        // divtwo.addEventListener("mousemove",div1);
+        divtwo.addEventListener("contextmenu",div1);
+    </script>
+</body>
+
+</html>

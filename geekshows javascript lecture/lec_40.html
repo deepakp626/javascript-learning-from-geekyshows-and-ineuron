@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myid">
+        <h1>we are js</h1>
+        <h1>i am h1</h1>
+    </div>
+    <script>
+        let targetNode = document.getElementById("myid");
+        
+        targetNode.appendChild(document.createTextNode("Hello"))
+        targetNode.appendChild(document.createTextNode("My Name"))
+        targetNode.appendChild(document.createTextNode("is DK"))
+        
+        console.log(targetNode.childNodes)
+        
+        targetNode.normalize()
+        
+        console.log(targetNode.childNodes)
+        </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .myclass1{
+            background-color:blue;
+        }
+        .myclass2{
+            background-color:red;
+        }
+    </style>
+</head>
+<body>
+    <body>
+        <p id="myp" class="myclass1 myclass2" style="color:darkgray">paragrapher</p>
+        <script>
+          let p = document.getElementById("myp");
+         let elementClass = p.classList
+         elementClass.add("myclass3")
+         elementClass.add("myclass4","myclass5")
+         console.log(elementClass.value)
+         console.log(elementClass.item(0))
+         console.log(elementClass.remove('myclass3'))
+         console.log(elementClass.replace('myclass1','myclass1'))
+         console.log(elementClass)
+        </script>
+</body>
+</html>

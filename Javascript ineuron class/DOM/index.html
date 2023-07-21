@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM maniculation</title>
+</head>
+
+<body>
+
+    <ul  id="element" data="value" >
+        <li class="list-item">First Element</li>
+        <li class="list-item">Second Element</li>
+        <li class="list-item">Third Element</li>
+    </ul>
+    <table>
+        <tr>
+            <td>one</td>
+            <td>two</td>
+        </tr>
+        <tr>
+            <td>three</td>
+            <td>four</td>
+        </tr>
+    </table>
+    <script src="DOM.js"></script>
+    <script>
+        // ///// Root Node
+        // console.log(document.documentElement)
+        // console.log(document.head)
+        // console.log(document.body)
+
+        // ////// childrens
+        // console.log(document.body.childNodes)
+        // console.log(document.body.children)
+        // for (let node of document.body.children) {
+        //     console.log(node)
+        // }
+
+
+        //////  firstchild or lastchild
+        // console.log(document.body.firstChild)
+        // console.log(document.body.lastChild)
+        // console.log(document.body.firstElementChild)
+        // console.log(document.body.lastElementChild)
+
+        //////////  sublings 
+        // console.log(document.body.children[0])
+
+        // const ulTag = document.body.children[0]
+        // const firstLi = ulTag.children[0]
+        // const secondLi = ulTag.children[1]
+        // console.log(secondLi.previousElementSibling.textContent)
+
+
+
+        ////// table DOM 
+        // const tableTag = document.body.children[1]
+        // console.log(tableTag.tBodies[0].rows[1].cells[1].textContent)
+        // console.log(tableTag.tBodies[0].rows[1].cells[1].style = "background-color: blue")
+        
+
+        /////////  ID Search
+        // element.style.background  = "red"
+
+
+        //  const ulTag= document.getElementById("element")
+        //  ulTag.style.backgroundColor = "blue"
+
+            // const list = document.getElementsByClassName("list-item")
+            // console.log(list)
+
+            // console.log(document.getElementsByTagName("table"))
+
+
+
+        // const listItems = document.querySelector("ul > li:last-child")
+        // console.log(listItems)
+        // console.log(listItems.textContent)
+
+
+        //////////  Attributes
+        // console.log(element.id)
+        // console.log(element.data)
+        // console.log(element.getAttribute("data"))
+        // console.log(element.setAttribute("attribute_name","attribute_value"))
+        // console.log(element.getAttribute("attribute_name"))
+        // console.log(element.hasAttribute("attribute_name"))
+        // console.log(element.removeAttribute("attribute_name"))
+        // console.log(element.hasAttribute("attribute_name"))
+        // console.log(element.attributes)
+
+
+
+
+        /////////  creating element
+            let newDiv = document.createElement("div")
+            console.log(newDiv)
+            let newText = document.createTextNode("deepak")
+            console.log(newText)
+            newDiv.appendChild(newText)
+            // body.append(newDiv)
+            // body.prepend(newDiv)
+            // body.before(newDiv)
+            // body.after(newDiv)
+    </script>
+</body>
+
+</html>

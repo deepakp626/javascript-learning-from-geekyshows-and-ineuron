@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border: 5px;
+        }
+    </style>
+</head>
+<body>
+     <table border="1" id="mytab" >
+        <thead>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Course</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>11</td>
+                <td>Rahul</td>
+                <td>javascript</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>deepak</td>
+                <td>c++</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>vaibhav</td>
+                <td>c</td>
+            </tr>
+        </tbody>
+     </table>
+     <script>
+            let table = document.getElementById("mytab")
+           let tcap = table.createCaption()
+           console.log(tcap.innerHTML)
+
+            
+     </script>
+</body>
+</html>

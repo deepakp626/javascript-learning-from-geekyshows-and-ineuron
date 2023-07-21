@@ -1,0 +1,48 @@
+// const product = {
+//     item : 'js',
+//     price : 500,
+//     discount  :20,
+//     itemcode : 'F40'
+// }
+
+
+
+// function createProduct(name,price , dicount,itemcode)
+// {
+//     return {
+//         name : name,
+//         price : price,
+//         dicount:discount,
+//         itemcode:itemcode
+//     }
+// }
+// const football = createProduct('football',400,20,'f10')
+
+
+
+
+
+// function CreateProduct(name,price , discount,itemcode)
+// {
+//     this.name = name;
+//     this.price = price;
+//     this.discount = discount
+//     this.itemcode = itemcode
+//     this.discountValue = function(){
+//         return price*discount/100
+//     }
+// }
+// const mobile = new CreateProduct('oneplus',30000,5,'OP20')
+// console.log(mobile)
+// console.log(mobile.discountValue())
+
+
+
+
+
+
+
+
+
+
+
